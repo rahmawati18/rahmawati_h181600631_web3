@@ -61,13 +61,14 @@
                             </div>
                         </div>
 
+                        
                         <div class="form-group row">
                             <label for="captcha" class="col-md-4 col-form-label text-md-right">{{ __('Captcha') }}</label>
 
                             <div class="col-md-6">
                             <div class="captcha">
                                  <span>{!! captcha_img() !!}</span>
-                                   
+                                 <button type="button" class="btn btn-success"><i class="fa fa-refresh" id="refresh">refresh</i></button>   
                             </div>
                                 <input id="captcha" type="captcha" class="form-control @error('captcha') is-invalid @enderror" name="captcha" placeholder="Enter captcha">
 
